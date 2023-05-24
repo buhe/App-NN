@@ -15,7 +15,15 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
-
+    init() {
+        guard let cifar10Data = readCIFAR10DataFromFile(filename: "cifar-10-batches-bin/data_batch_1.bin") else {
+            return
+        }
+        let images = cifar10Data.images
+        let labels = cifar10Data.labels
+        
+        print(images.count)
+    }
     var body: some View {
         NavigationView {
             List {

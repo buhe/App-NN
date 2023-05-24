@@ -16,6 +16,8 @@
 		3F808E5829F6AE7F00D57FB1 /* app_nnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F808E5729F6AE7F00D57FB1 /* app_nnTests.swift */; };
 		3F808E6229F6AE7F00D57FB1 /* app_nnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F808E6129F6AE7F00D57FB1 /* app_nnUITests.swift */; };
 		3F808E6429F6AE7F00D57FB1 /* app_nnUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F808E6329F6AE7F00D57FB1 /* app_nnUITestsLaunchTests.swift */; };
+		3FC4A05C2A1DFA8100AD9CB3 /* Cifar10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4A05B2A1DFA8100AD9CB3 /* Cifar10.swift */; };
+		3FC4A05E2A1DFF6100AD9CB3 /* cifar-10-batches-bin in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4A05D2A1DFF6100AD9CB3 /* cifar-10-batches-bin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3F808E5D29F6AE7F00D57FB1 /* app-nnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "app-nnUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F808E6129F6AE7F00D57FB1 /* app_nnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_nnUITests.swift; sourceTree = "<group>"; };
 		3F808E6329F6AE7F00D57FB1 /* app_nnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_nnUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FC4A05B2A1DFA8100AD9CB3 /* Cifar10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cifar10.swift; sourceTree = "<group>"; };
+		3FC4A05D2A1DFF6100AD9CB3 /* cifar-10-batches-bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "cifar-10-batches-bin"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F2D122F29FD0DA500DEC0D3 /* datasets */ = {
+			isa = PBXGroup;
+			children = (
+				3FC4A05B2A1DFA8100AD9CB3 /* Cifar10.swift */,
+			);
+			path = datasets;
+			sourceTree = "<group>";
+		};
+		3F2D123029FD0DBC00DEC0D3 /* graph */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = graph;
+			sourceTree = "<group>";
+		};
+		3F2D123129FE043E00DEC0D3 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				3F2D123029FD0DBC00DEC0D3 /* graph */,
+				3F2D122F29FD0DA500DEC0D3 /* datasets */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
 		3F808E3429F6AE7E00D57FB1 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +127,8 @@
 		3F808E3F29F6AE7E00D57FB1 /* app-nn */ = {
 			isa = PBXGroup;
 			children = (
+				3FC4A05D2A1DFF6100AD9CB3 /* cifar-10-batches-bin */,
+				3F2D123129FE043E00DEC0D3 /* framework */,
 				3F808E4029F6AE7E00D57FB1 /* app_nnApp.swift */,
 				3F808E4229F6AE7E00D57FB1 /* Persistence.swift */,
 				3F808E4729F6AE7E00D57FB1 /* ContentView.swift */,
@@ -151,6 +181,8 @@
 			dependencies = (
 			);
 			name = "app-nn";
+			packageProductDependencies = (
+			);
 			productName = "app-nn";
 			productReference = 3F808E3D29F6AE7E00D57FB1 /* app-nn.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +255,8 @@
 				Base,
 			);
 			mainGroup = 3F808E3429F6AE7E00D57FB1;
+			packageReferences = (
+			);
 			productRefGroup = 3F808E3E29F6AE7E00D57FB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -240,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F808E4E29F6AE7F00D57FB1 /* Preview Assets.xcassets in Resources */,
+				3FC4A05E2A1DFF6100AD9CB3 /* cifar-10-batches-bin in Resources */,
 				3F808E4A29F6AE7F00D57FB1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +302,7 @@
 			files = (
 				3F808E4129F6AE7E00D57FB1 /* app_nnApp.swift in Sources */,
 				3F808E4629F6AE7E00D57FB1 /* app_nn.xcdatamodeld in Sources */,
+				3FC4A05C2A1DFA8100AD9CB3 /* Cifar10.swift in Sources */,
 				3F808E4829F6AE7E00D57FB1 /* ContentView.swift in Sources */,
 				3F808E4329F6AE7E00D57FB1 /* Persistence.swift in Sources */,
 			);
