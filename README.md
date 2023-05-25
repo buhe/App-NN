@@ -1,7 +1,12 @@
 ## app-nn
+
 - [x] Load dataset
-- [ ] Implement * multiplication
-- [ ] Liner and softmax
+- [ ] Read image data to Swift array
+- [ ] Label to one hot
+- [ ] Implement dot multiplication
+- [ ] Liner
+- [ ] Sigmoid or relu
+- [ ] Softmax
 - [ ] Computer graph
 - [ ] SGD
 - [ ] Loss
