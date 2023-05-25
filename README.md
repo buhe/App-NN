@@ -2,7 +2,7 @@
 - [x] Load dataset
 - [ ] Implement dot multiplication
 - [ ] Liner
-- [ ] Sigmod or relu
+- [ ] Sigmoid or relu
 - [ ] Softmax
 - [ ] Computer graph
 - [ ] SGD
