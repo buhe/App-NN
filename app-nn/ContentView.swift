@@ -23,6 +23,7 @@ struct ContentView: View {
         let labels = cifar10Data.labels
         
         print(labels.first!)
+        print(images.first!)
     }
     var body: some View {
         NavigationView {
