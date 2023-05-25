@@ -1,7 +1,7 @@
 ## app-nn
 
 - [x] Load dataset
-- [ ] Read bit to Swift array
+- [ ] Read image data to Swift array
 - [ ] Label to one hot
 - [ ] Implement dot multiplication
 - [ ] Liner
