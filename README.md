@@ -3,3 +3,5 @@
 - [ ] Matrix multiplication
 - [ ] Liner and softmax
 - [ ] Computer graph
+- [ ] UI
+- [ ] Train
