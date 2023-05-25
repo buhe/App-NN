@@ -2,6 +2,7 @@
 
 - [x] Load dataset
 - [ ] Read bit to Swift array
+- [ ] Label to one hot
 - [ ] Implement dot multiplication
 - [ ] Liner
 - [ ] Sigmoid or relu
