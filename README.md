@@ -1,7 +1,9 @@
 ## app-nn
 - [x] Load dataset
-- [ ] Implement * multiplication
-- [ ] Liner and softmax
+- [ ] Implement dot multiplication
+- [ ] Liner
+- [ ] Sigmod or relu
+- [ ] Softmax
 - [ ] Computer graph
 - [ ] SGD
 - [ ] Loss
