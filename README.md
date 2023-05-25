@@ -1,6 +1,6 @@
 ## app-nn
 - [x] Load dataset
-- [ ] Matrix multiplication
+- [ ] Implement * multiplication
 - [ ] Liner and softmax
 - [ ] Computer graph
 - [ ] UI
