@@ -3,7 +3,8 @@
 - [x] Load dataset
 - [x] Read image data to Swift array
 - [x] Label to one hot
-- [ ] Implement dot multiplication
+- [x] Implement dot multiplication
+- [x] Create init weight
 - [ ] Liner
 - [ ] Sigmoid or relu
 - [ ] Softmax
