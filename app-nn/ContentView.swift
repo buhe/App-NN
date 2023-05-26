@@ -32,6 +32,9 @@ struct ContentView: View {
         if let result = matrixMultiplication(a, b) {
             print(result)
         }
+        
+        let w = createWeight(rows: 2, columns: 3)
+        print(w)
     }
     var body: some View {
         NavigationView {
