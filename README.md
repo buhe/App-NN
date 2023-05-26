@@ -5,11 +5,11 @@
 - [x] Label to one hot
 - [x] Implement dot multiplication
 - [x] Create init weight
-- [ ] Liner
-- [ ] Sigmoid or relu
-- [ ] Softmax
 - [ ] Computer graph
-- [ ] SGD
-- [ ] Loss: Cross-entropy
+  - [ ] Liner
+  - [ ] Sigmoid or relu
+  - [ ] Softmax
+  - [ ] SGD
+  - [ ] Loss: Cross-entropy
 - [ ] UI
 - [ ] Train
