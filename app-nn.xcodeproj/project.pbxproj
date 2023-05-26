@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2ECF172A2045F700B4A2E6 /* CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2ECF162A2045F700B4A2E6 /* CPU.swift */; };
 		3F808E4129F6AE7E00D57FB1 /* app_nnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F808E4029F6AE7E00D57FB1 /* app_nnApp.swift */; };
 		3F808E4329F6AE7E00D57FB1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F808E4229F6AE7E00D57FB1 /* Persistence.swift */; };
 		3F808E4629F6AE7E00D57FB1 /* app_nn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F808E4429F6AE7E00D57FB1 /* app_nn.xcdatamodeld */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F2ECF162A2045F700B4A2E6 /* CPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPU.swift; sourceTree = "<group>"; };
 		3F808E3D29F6AE7E00D57FB1 /* app-nn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-nn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F808E4029F6AE7E00D57FB1 /* app_nnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_nnApp.swift; sourceTree = "<group>"; };
 		3F808E4229F6AE7E00D57FB1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				3F808E4B29F6AE7F00D57FB1 /* app_nn.entitlements */,
 				3F808E4429F6AE7E00D57FB1 /* app_nn.xcdatamodeld */,
 				3F808E4C29F6AE7F00D57FB1 /* Preview Content */,
+				3F2ECF162A2045F700B4A2E6 /* CPU.swift */,
 			);
 			path = "app-nn";
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				3FC4A05C2A1DFA8100AD9CB3 /* Cifar10.swift in Sources */,
 				3F808E4829F6AE7E00D57FB1 /* ContentView.swift in Sources */,
 				3F808E4329F6AE7E00D57FB1 /* Persistence.swift in Sources */,
+				3F2ECF172A2045F700B4A2E6 /* CPU.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
