@@ -16,14 +16,22 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item>
     init() {
-        guard let cifar10Data = readCIFAR10DataFromFile(filename: "cifar-10-batches-bin/data_batch_1.bin") else {
-            return
-        }
-        let images = cifar10Data.images
-        let labels = cifar10Data.labels
+//        guard let cifar10Data = readCIFAR10DataFromFile(filename: "cifar-10-batches-bin/data_batch_1.bin") else {
+//            return
+//        }
+//        let images = cifar10Data.images
+//        let labels = cifar10Data.labels
+//
+//        print(labels.first!)
+//        print(images.first!)
         
-        print(labels.first!)
-        print(images.first!)
+        let a = [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
+        let b = [[1.0, 4.0], [2.0, 5.0], [3.0, 6.0]]
+
+        // 调用函数进行矩阵乘法
+        if let result = matrixMultiplication(a, b) {
+            print(result)
+        }
     }
     var body: some View {
         NavigationView {
