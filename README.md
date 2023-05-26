@@ -10,6 +10,6 @@
 - [ ] Softmax
 - [ ] Computer graph
 - [ ] SGD
-- [ ] Loss
+- [ ] Loss: Cross-entropy
 - [ ] UI
 - [ ] Train
