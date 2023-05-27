@@ -5,7 +5,7 @@
 - [x] Label to one hot
 - [x] Implement dot multiplication
 - [x] Create init weight
-- [ ] Computer graph
+- [ ] Computational graph
   - [ ] Liner
   - [ ] Sigmoid or relu
   - [ ] Softmax
