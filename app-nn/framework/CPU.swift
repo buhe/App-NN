@@ -22,7 +22,17 @@ import Foundation
 //    return result
 //}
 
-func matrixMultiplication(_ a: [[Double]], _ b: [[Double]]) -> [[Double]]? {
+func transpose(_ a: [[Float]]) -> [[Float]] {
+    var result: [[Float]] = Array(repeating: Array(repeating: 0.0, count: a[0].count), count: a.count)
+    for i in 0..<a.count {
+        for j in 0..<a[i].count {
+            result[j][i] = a[i][j]
+        }
+    }
+    return result
+}
+
+func matrixMultiplication(_ a: [[Float]], _ b: [[Float]]) -> [[Float]]? {
     
     let rowsInA = a.count
     let columnsInA = a[0].count
@@ -34,7 +44,7 @@ func matrixMultiplication(_ a: [[Double]], _ b: [[Double]]) -> [[Double]]? {
         return nil // 不符合矩阵乘法规则
     }
     
-    var result = Array(repeating: Array(repeating: 0.0, count: columnsInB), count: rowsInA)
+    var result: [[Float]] = Array(repeating: Array(repeating: 0.0, count: columnsInB), count: rowsInA)
     
     for i in 0 ..< rowsInA {
         for j in 0 ..< columnsInB {

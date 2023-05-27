@@ -19,6 +19,9 @@
 		3F808E6429F6AE7F00D57FB1 /* app_nnUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F808E6329F6AE7F00D57FB1 /* app_nnUITestsLaunchTests.swift */; };
 		3FC4A05C2A1DFA8100AD9CB3 /* Cifar10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4A05B2A1DFA8100AD9CB3 /* Cifar10.swift */; };
 		3FC4A05E2A1DFF6100AD9CB3 /* cifar-10-batches-bin in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4A05D2A1DFF6100AD9CB3 /* cifar-10-batches-bin */; };
+		3FDD9EB62A22C8600040931C /* Affine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD9EB52A22C85F0040931C /* Affine.swift */; };
+		3FDD9EB82A22C88A0040931C /* Relu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD9EB72A22C88A0040931C /* Relu.swift */; };
+		3FDD9EBA2A22C8D40040931C /* SoftmaxWithLoss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD9EB92A22C8D40040931C /* SoftmaxWithLoss.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		3F808E6329F6AE7F00D57FB1 /* app_nnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_nnUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3FC4A05B2A1DFA8100AD9CB3 /* Cifar10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cifar10.swift; sourceTree = "<group>"; };
 		3FC4A05D2A1DFF6100AD9CB3 /* cifar-10-batches-bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "cifar-10-batches-bin"; sourceTree = "<group>"; };
+		3FDD9EB52A22C85F0040931C /* Affine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affine.swift; sourceTree = "<group>"; };
+		3FDD9EB72A22C88A0040931C /* Relu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relu.swift; sourceTree = "<group>"; };
+		3FDD9EB92A22C8D40040931C /* SoftmaxWithLoss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftmaxWithLoss.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,9 @@
 		3F2D123029FD0DBC00DEC0D3 /* graph */ = {
 			isa = PBXGroup;
 			children = (
+				3FDD9EB52A22C85F0040931C /* Affine.swift */,
+				3FDD9EB72A22C88A0040931C /* Relu.swift */,
+				3FDD9EB92A22C8D40040931C /* SoftmaxWithLoss.swift */,
 			);
 			path = graph;
 			sourceTree = "<group>";
@@ -100,6 +109,7 @@
 		3F2D123129FE043E00DEC0D3 /* framework */ = {
 			isa = PBXGroup;
 			children = (
+				3F2ECF162A2045F700B4A2E6 /* CPU.swift */,
 				3F2D123029FD0DBC00DEC0D3 /* graph */,
 				3F2D122F29FD0DA500DEC0D3 /* datasets */,
 			);
@@ -138,7 +148,6 @@
 				3F808E4B29F6AE7F00D57FB1 /* app_nn.entitlements */,
 				3F808E4429F6AE7E00D57FB1 /* app_nn.xcdatamodeld */,
 				3F808E4C29F6AE7F00D57FB1 /* Preview Content */,
-				3F2ECF162A2045F700B4A2E6 /* CPU.swift */,
 			);
 			path = "app-nn";
 			sourceTree = "<group>";
@@ -303,6 +312,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDD9EB62A22C8600040931C /* Affine.swift in Sources */,
+				3FDD9EBA2A22C8D40040931C /* SoftmaxWithLoss.swift in Sources */,
+				3FDD9EB82A22C88A0040931C /* Relu.swift in Sources */,
 				3F808E4129F6AE7E00D57FB1 /* app_nnApp.swift in Sources */,
 				3F808E4629F6AE7E00D57FB1 /* app_nn.xcdatamodeld in Sources */,
 				3FC4A05C2A1DFA8100AD9CB3 /* Cifar10.swift in Sources */,

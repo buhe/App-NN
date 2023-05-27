@@ -25,8 +25,8 @@ struct ContentView: View {
 //        print(labels.first!)
 //        print(images.first!)
         
-        let a = [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
-        let b = [[1.0, 4.0], [2.0, 5.0], [3.0, 6.0]]
+        let a: [[Float]] = [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
+        let b: [[Float]] = [[1.0, 4.0], [2.0, 5.0], [3.0, 6.0]]
 
         // 调用函数进行矩阵乘法
         if let result = matrixMultiplication(a, b) {
