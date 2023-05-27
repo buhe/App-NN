@@ -7,6 +7,7 @@
 - [x] Create init weight
 - [ ] Computational graph
   - [ ] Liner
+    - [ ] Mul layer
   - [ ] Sigmoid or relu
   - [ ] Softmax
   - [ ] SGD
