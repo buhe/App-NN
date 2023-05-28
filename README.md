@@ -15,5 +15,6 @@
   - [ ] Softmax
   - [ ] SGD
   - [ ] Loss: Cross-entropy
+  - [ ] Network
 - [ ] UI
 - [ ] Train
