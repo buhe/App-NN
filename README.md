@@ -11,7 +11,7 @@
   - [x] Liner
     - [x] Mul layer
     - [ ] Add layer
-  - [ ] Sigmoid or relu
+  - [x] Relu
   - [ ] Softmax
   - [ ] SGD
   - [ ] Loss: Cross-entropy
