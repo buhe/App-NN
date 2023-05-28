@@ -7,20 +7,6 @@
 
 import Foundation
 
-// n * m dot m * j = n * j
-//func dot(ma:[[Float]], mb: [[Float]]) -> [[Float]] {
-//    var ji = 0
-//    var result = [[Float]]()
-//    for ra in 0..<ma.count { // n
-//        var sum: Float = 0.0
-//        for ca in 0..<ma[ra].count { // m a00 -> a01
-//            let anm = ma[ra][ca]
-//            let bmj = mb[ca][ji]
-//            sum += anm * bmj
-//        }
-//    }
-//    return result
-//}
 
 func transpose(_ a: [[Float]]) -> [[Float]] {
     var result: [[Float]] = Array(repeating: Array(repeating: 0.0, count: a.count), count: a[0].count)
@@ -67,7 +53,7 @@ func softmax(x: [Float]) -> [Float]{
     return expArr.map { $0 / sumExp }
 }
 
-func cross_entropy_error(y: [Float], yHat: [Float]) -> Float {
+func crossEntropyError(y: [Float], yHat: [Float]) -> Float {
     var total: Float = 0.0
     for i in 0..<y.count {
         let yi = y[i] + 1e-7

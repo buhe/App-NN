@@ -65,7 +65,7 @@ struct ContentView: View {
         
         let c: [Float] = [1.0]
         let d: [Float] = [1.0]
-        print("cross: \(cross_entropy_error(y: c, yHat: d))")
+        print("cross: \(crossEntropyError(y: c, yHat: d))")
     }
     var body: some View {
         NavigationView {

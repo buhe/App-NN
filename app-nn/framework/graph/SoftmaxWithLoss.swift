@@ -14,7 +14,7 @@ class SoftmaxWithLoss {
     func forward(x: [Float], t: [Float]) -> Float {
         self.t = t
         self.y = softmax(x: x)
-        self.loss = cross_entropy_error(y: self.y, yHat: self.t)
+        self.loss = crossEntropyError(y: self.y, yHat: self.t)
         return self.loss
     }
     
