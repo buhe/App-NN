@@ -60,3 +60,19 @@ func matrixMultiplication(_ a: [[Float]], _ b: [[Float]]) -> [[Float]]? {
 func createWeight(rows: Int, columns: Int) -> [[Int]]{
     return [[Int]](repeating: [Int](repeating: 0, count: columns), count: rows)
 }
+
+func softmax(x: [Float]) -> [Float]{
+    let expArr = x.map { exp($0) }
+    let sumExp = expArr.reduce(0, +)
+    return expArr.map { $0 / sumExp }
+}
+
+func cross_entropy_error(y: [Float], yHat: [Float]) -> Float {
+    var total: Float = 0.0
+    for i in 0..<y.count {
+        let yi = y[i] + 1e-7
+        total += yi * log(yHat[i] + 1e-7)
+    }
+    return -total
+
+}

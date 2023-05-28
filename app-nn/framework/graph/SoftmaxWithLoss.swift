@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+class SoftmaxWithLoss {
+//    func forward(x: [Float], t: [Float]) -> [Float] {
+//        
+//    }
+//    
+//    func backward() -> [Float] {
+//        
+//    }
+}

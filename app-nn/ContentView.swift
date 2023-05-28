@@ -58,6 +58,14 @@ struct ContentView: View {
         print("rout: \(rout)")
         print("mask: \(relu.mask)")
         print("drelu: \(drelu)")
+        
+        let arr: [Float] = [1.0, 2.0, 3.0, 4.0, 1.0, 2.0, 3.0]
+        let softmaxArr = softmax(x: arr)
+        print("softmax \(softmaxArr)")
+        
+        let c: [Float] = [1.0]
+        let d: [Float] = [1.0]
+        print("cross: \(cross_entropy_error(y: c, yHat: d))")
     }
     var body: some View {
         NavigationView {
