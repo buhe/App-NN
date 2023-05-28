@@ -64,8 +64,14 @@ struct ContentView: View {
         print("softmax \(softmaxArr)")
         
         let c: [Float] = [1.0]
-        let d: [Float] = [1.0]
+        let d: [Float] = [2.0]
         print("cross: \(crossEntropyError(y: c, yHat: d))")
+        
+        let soft = SoftmaxWithLoss()
+        let loss = soft.forward(x: c, t: d)
+        print("loss: \(loss)")
+        let dloss = soft.backward()
+        print("dloss: \(dloss)")
     }
     var body: some View {
         NavigationView {
