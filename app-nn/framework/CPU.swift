@@ -23,7 +23,7 @@ import Foundation
 //}
 
 func transpose(_ a: [[Float]]) -> [[Float]] {
-    var result: [[Float]] = Array(repeating: Array(repeating: 0.0, count: a[0].count), count: a.count)
+    var result: [[Float]] = Array(repeating: Array(repeating: 0.0, count: a.count), count: a[0].count)
     for i in 0..<a.count {
         for j in 0..<a[i].count {
             result[j][i] = a[i][j]

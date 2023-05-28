@@ -21,7 +21,7 @@ class Affine {
     }
     
     func backward(dout: [[Float]]) -> [[Float]]{
-        self.dw = matrixMultiplication(transpose(self.x), dout)!
-        return matrixMultiplication(dout, transpose(self.w))!
+        self.dw = matrixMultiplication(transpose(self.x), dout)! // 3 2 2 2
+        return matrixMultiplication(dout, transpose(self.w))! //   2 3
     }
 }

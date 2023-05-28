@@ -27,14 +27,26 @@ struct ContentView: View {
         
         let a: [[Float]] = [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
         let b: [[Float]] = [[1.0, 4.0], [2.0, 5.0], [3.0, 6.0]]
+        let dinput: [[Float]] = [[1.0,1.0], [1.0,1.0]]
 
         // 调用函数进行矩阵乘法
-        if let result = matrixMultiplication(a, b) {
-            print(result)
-        }
+//        if let result = matrixMultiplication(a, b) {
+//            print(result)
+//        }
+//
+//        let w = createWeight(rows: 2, columns: 3)
+//        print(w)
+        let affine = Affine(w: b)
+        let out = affine.forward(x: a)
+        let dout = affine.backward(dout: dinput)
         
-        let w = createWeight(rows: 2, columns: 3)
-        print(w)
+        print(out)
+        print(dout)
+        print("dw: \(affine.dw)")
+        
+        let at = transpose(a)
+        
+        print(at)
     }
     var body: some View {
         NavigationView {
