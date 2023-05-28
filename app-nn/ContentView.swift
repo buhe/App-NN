@@ -25,9 +25,9 @@ struct ContentView: View {
 //        print(labels.first!)
 //        print(images.first!)
         
-        let a: [[Float]] = [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
+        let a: [Float] = [1.0, 2.0, 3.0]
         let b: [[Float]] = [[1.0, 4.0], [2.0, 5.0], [3.0, 6.0]]
-        let dinput: [[Float]] = [[1.0,1.0], [1.0,1.0]]
+        let dinput: [Float] = [1.0,1.0]
 
         // 调用函数进行矩阵乘法
 //        if let result = matrixMultiplication(a, b) {
@@ -44,7 +44,7 @@ struct ContentView: View {
         print(dout)
         print("dw: \(affine.dw)")
         
-        let at = transpose(a)
+        let at = transpose([[1.0,2.0], [3.0,4.0]])
         
         print(at)
         
