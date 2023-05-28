@@ -6,7 +6,7 @@
 - [ ] CPU
   - [x] Implement dot multiplication
   - [x] Implement transpose
-- [x] Create init weight
+- [ ] Create init weight based on gaussian distribution
 - [ ] Computational graph
   - [x] Liner
     - [x] Mul layer
