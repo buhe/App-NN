@@ -12,9 +12,9 @@
     - [x] Mul layer
     - [ ] Add layer
   - [x] Relu
-  - [ ] Softmax
-  - [ ] SGD
-  - [ ] Loss: Cross-entropy
+  - [x] Softmax
+  - [x] SGD
+  - [x] Loss: Cross-entropy
   - [ ] Network
 - [ ] UI
 - [ ] Train
