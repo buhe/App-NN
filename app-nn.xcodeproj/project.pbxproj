@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3F2ECF172A2045F700B4A2E6 /* CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2ECF162A2045F700B4A2E6 /* CPU.swift */; };
+		3F7B98DB2A234328001725FF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B98DA2A234328001725FF /* Network.swift */; };
+		3F7B98DD2A234376001725FF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B98DC2A234376001725FF /* ViewModel.swift */; };
 		3F808E4129F6AE7E00D57FB1 /* app_nnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F808E4029F6AE7E00D57FB1 /* app_nnApp.swift */; };
 		3F808E4329F6AE7E00D57FB1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F808E4229F6AE7E00D57FB1 /* Persistence.swift */; };
 		3F808E4629F6AE7E00D57FB1 /* app_nn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F808E4429F6AE7E00D57FB1 /* app_nn.xcdatamodeld */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		3F2ECF162A2045F700B4A2E6 /* CPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPU.swift; sourceTree = "<group>"; };
+		3F7B98DA2A234328001725FF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		3F7B98DC2A234376001725FF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		3F808E3D29F6AE7E00D57FB1 /* app-nn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-nn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F808E4029F6AE7E00D57FB1 /* app_nnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_nnApp.swift; sourceTree = "<group>"; };
 		3F808E4229F6AE7E00D57FB1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 				3F808E4B29F6AE7F00D57FB1 /* app_nn.entitlements */,
 				3F808E4429F6AE7E00D57FB1 /* app_nn.xcdatamodeld */,
 				3F808E4C29F6AE7F00D57FB1 /* Preview Content */,
+				3F7B98DA2A234328001725FF /* Network.swift */,
+				3F7B98DC2A234376001725FF /* ViewModel.swift */,
 			);
 			path = "app-nn";
 			sourceTree = "<group>";
@@ -312,8 +318,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7B98DB2A234328001725FF /* Network.swift in Sources */,
 				3FDD9EB62A22C8600040931C /* Affine.swift in Sources */,
 				3FDD9EBA2A22C8D40040931C /* SoftmaxWithLoss.swift in Sources */,
+				3F7B98DD2A234376001725FF /* ViewModel.swift in Sources */,
 				3FDD9EB82A22C88A0040931C /* Relu.swift in Sources */,
 				3F808E4129F6AE7E00D57FB1 /* app_nnApp.swift in Sources */,
 				3F808E4629F6AE7E00D57FB1 /* app_nn.xcdatamodeld in Sources */,
