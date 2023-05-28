@@ -8,11 +8,23 @@
 import Foundation
 
 class SoftmaxWithLoss {
-//    func forward(x: [Float], t: [Float]) -> [Float] {
-//        
-//    }
-//    
-//    func backward() -> [Float] {
-//        
-//    }
+    var t: [Float] = []
+    var y: [Float] = []
+    var loss: Float = 0.0
+    func forward(x: [Float], t: [Float]) -> Float {
+        self.t = t
+        self.y = softmax(x: x)
+        self.loss = cross_entropy_error(y: self.y, yHat: self.t)
+        return self.loss
+    }
+    
+    func backward() -> [Float] {
+        var result = [Float]()
+        for (index, value) in self.y.enumerated() {
+            let diff = value - self.t[index]
+            result.append(diff)
+        }
+        return result
+
+    }
 }
