@@ -8,8 +8,9 @@
   - [x] Implement transpose
 - [x] Create init weight
 - [ ] Computational graph
-  - [ ] Liner
-    - [ ] Mul layer
+  - [x] Liner
+    - [x] Mul layer
+    - [ ] Add layer
   - [ ] Sigmoid or relu
   - [ ] Softmax
   - [ ] SGD
