@@ -47,6 +47,17 @@ struct ContentView: View {
         let at = transpose(a)
         
         print(at)
+        
+        let r: [Float] = [1.0, -1.0]
+        let relu = Relu()
+        let rout = relu.forward(x: r)
+        
+        let dr: [Float] = [2.0, 2.0]
+        let drelu = relu.backward(dout: dr)
+        
+        print("rout: \(rout)")
+        print("mask: \(relu.mask)")
+        print("drelu: \(drelu)")
     }
     var body: some View {
         NavigationView {
