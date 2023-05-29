@@ -62,8 +62,8 @@
             filePath = "app-nn/framework/graph/Affine.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "backward(dout:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -146,6 +146,70 @@
             endingLineNumber = "63"
             landmarkName = "generate2DGaussianArray(numRows:numCols:stdRow:stdCol:)"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF293724-14A1-491C-832F-C3308B08CAA2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "app-nn/Network.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "updateB(key:grad:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "180519AA-EF49-4BFB-9B6F-35D3D9371AE9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "app-nn/framework/graph/Affine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "forward(x:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "180519AA-EF49-4BFB-9B6F-35D3D9371AE9 - fd0e0ab5641b87f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app_nn.Affine.forward(x: Swift.Array&lt;Swift.Float&gt;) -&gt; Swift.Array&lt;Swift.Float&gt;"
+                  moduleName = "app-nn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guyanhua/code/github/app-nn/app-nn/framework/graph/Affine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "180519AA-EF49-4BFB-9B6F-35D3D9371AE9 - fd0e0ab5641b87da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app_nn.Affine.forward(x: Swift.Array&lt;Swift.Float&gt;) -&gt; Swift.Array&lt;Swift.Float&gt;"
+                  moduleName = "app-nn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guyanhua/code/github/app-nn/app-nn/framework/graph/Affine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "276">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

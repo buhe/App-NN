@@ -25,9 +25,9 @@ class Network {
         paramsB["b1"] = generateZeroArray(size: hidden_size)
         paramsB["b2"] = generateZeroArray(size: output_size)
         
-        layers.append(Affine(w: params["w1"]!, b: paramsB["b1"]!))
+        layers.append(Affine(net: self, w: "w1", b: "b1"))
         layers.append(Relu())
-        layers.append(Affine(w: params["w2"]!, b: paramsB["b2"]!))
+        layers.append(Affine(net: self, w: "w2", b: "b2"))
     }
     
     func predict(x: [Float]) -> [Float] {
@@ -45,7 +45,7 @@ class Network {
     
     func gradient(x: [Float], t: [Float]) -> ([String: [[Float]]], [String: Float]) {
         let loss = self.loss(x: x, t: t)
-        print("loss: \(loss)")
+//        print("loss: \(loss)")
         
         var dout = lossLayer.backward()
         
@@ -83,9 +83,11 @@ class Network {
         let b = paramsB[key]!
         let bg = grad[key]!
 //        var newB: [Float] = []
+//        print("b: \(paramsB[key]!)")
         for i in 0..<b.count {
             paramsB[key]![i] = b[i] - learning_rate * bg
         }
+        
 //        print("newB: \(paramsB[key]!)")
 //        paramsB[key] = newB
     }
