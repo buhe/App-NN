@@ -43,9 +43,28 @@ func matrixMultiplication(_ a: [[Float]], _ b: [[Float]]) -> [[Float]]? {
     return result
 }
 
-func createWeight(rows: Int, columns: Int) -> [[Int]]{
-    return [[Int]](repeating: [Int](repeating: 0, count: columns), count: rows)
+func generate2DGaussianArray(numRows: Int, numCols: Int, stdRow: Float, stdCol: Float) -> [[Float]] {
+    let meanRow = Array(repeating: Float(numRows/2), count: numRows)
+    let meanCol = Array(repeating: Float(numCols/2), count: numCols)
+    var array2D: [[Float]] = Array(repeating: Array(repeating: 0.0, count: numCols), count: numRows)
+
+    for i in 0..<numRows {
+        for j in 0..<numCols {
+            let x = Float(j) - meanCol[j]
+            let y = Float(i) - meanRow[i]
+            let sigmaX = stdCol
+            let sigmaY = stdRow
+            let exponent = -(powf(x, 2)/(2*powf(sigmaX, 2)) + powf(y, 2)/(2*powf(sigmaY, 2)))
+            let value = powf(Float(M_E), exponent)/(2*Float.pi*sigmaX*sigmaY)
+            array2D[i][j] = value
+        }
+    }
+
+    return array2D
 }
+
+
+
 
 func softmax(x: [Float]) -> [Float]{
     let expArr = x.map { exp($0) }

@@ -6,7 +6,11 @@
 //
 
 import Foundation
-class Relu {
+class Relu: Layer {
+    func weight() -> [[Float]]? {
+        nil
+    }
+    
     var mask: [Int] = []
     func forward(x: [Float]) -> [Float] {
         x.enumerated().map { (index, value) in

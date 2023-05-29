@@ -19,6 +19,7 @@
 		3F808E5829F6AE7F00D57FB1 /* app_nnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F808E5729F6AE7F00D57FB1 /* app_nnTests.swift */; };
 		3F808E6229F6AE7F00D57FB1 /* app_nnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F808E6129F6AE7F00D57FB1 /* app_nnUITests.swift */; };
 		3F808E6429F6AE7F00D57FB1 /* app_nnUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F808E6329F6AE7F00D57FB1 /* app_nnUITestsLaunchTests.swift */; };
+		3F90E91B2A23A2B400DC084F /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90E91A2A23A2B400DC084F /* Layer.swift */; };
 		3FC4A05C2A1DFA8100AD9CB3 /* Cifar10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4A05B2A1DFA8100AD9CB3 /* Cifar10.swift */; };
 		3FC4A05E2A1DFF6100AD9CB3 /* cifar-10-batches-bin in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4A05D2A1DFF6100AD9CB3 /* cifar-10-batches-bin */; };
 		3FDD9EB62A22C8600040931C /* Affine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD9EB52A22C85F0040931C /* Affine.swift */; };
@@ -60,6 +61,7 @@
 		3F808E5D29F6AE7F00D57FB1 /* app-nnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "app-nnUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F808E6129F6AE7F00D57FB1 /* app_nnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_nnUITests.swift; sourceTree = "<group>"; };
 		3F808E6329F6AE7F00D57FB1 /* app_nnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_nnUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F90E91A2A23A2B400DC084F /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 		3FC4A05B2A1DFA8100AD9CB3 /* Cifar10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cifar10.swift; sourceTree = "<group>"; };
 		3FC4A05D2A1DFF6100AD9CB3 /* cifar-10-batches-bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "cifar-10-batches-bin"; sourceTree = "<group>"; };
 		3FDD9EB52A22C85F0040931C /* Affine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affine.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				3FDD9EB52A22C85F0040931C /* Affine.swift */,
 				3FDD9EB72A22C88A0040931C /* Relu.swift */,
 				3FDD9EB92A22C8D40040931C /* SoftmaxWithLoss.swift */,
+				3F90E91A2A23A2B400DC084F /* Layer.swift */,
 			);
 			path = graph;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				3F7B98DB2A234328001725FF /* Network.swift in Sources */,
 				3FDD9EB62A22C8600040931C /* Affine.swift in Sources */,
 				3FDD9EBA2A22C8D40040931C /* SoftmaxWithLoss.swift in Sources */,
+				3F90E91B2A23A2B400DC084F /* Layer.swift in Sources */,
 				3F7B98DD2A234376001725FF /* ViewModel.swift in Sources */,
 				3FDD9EB82A22C88A0040931C /* Relu.swift in Sources */,
 				3F808E4129F6AE7E00D57FB1 /* app_nnApp.swift in Sources */,

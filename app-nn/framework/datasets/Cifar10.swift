@@ -6,17 +6,17 @@
 //
 
 import Foundation
-func toOneHot(labels: [Int]) -> [[Int]] {
-    var oneHots = [[Int]]()
+func toOneHot(labels: [Int]) -> [[Float]] {
+    var oneHots = [[Float]]()
     for i in 0..<labels.count {
-        var oneHot = [Int](repeating: 0, count: 10)
+        var oneHot = [Float](repeating: 0, count: 10)
         oneHot[labels[i]] = 1
         oneHots.append(oneHot)
     }
     return oneHots
     
 }
-func readCIFAR10DataFromFile(filename: String) -> (images: [[Float]], labels: [[Int]])? {
+func readCIFAR10DataFromFile(filename: String) -> (images: [[Float]], labels: [[Float]])? {
     guard let fileurl = Bundle.main.url(forResource: filename, withExtension: nil) else {
         return nil
     }

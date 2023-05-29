@@ -7,7 +7,11 @@
 
 import Foundation
 
-class Affine {
+class Affine: Layer {
+    func weight() -> [[Float]]? {
+        dw
+    }
+    
     var w: [[Float]]
     var dw: [[Float]] = []
     var x: [[Float]] = []
