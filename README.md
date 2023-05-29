@@ -3,7 +3,7 @@
 - [x] Load dataset
 - [x] Read image data to Swift array
 - [x] Label to one hot
-- [ ] CPU
+- [x] CPU
   - [x] Implement dot multiplication
   - [x] Implement transpose
 - [x] Create init weight based on gaussian distribution
