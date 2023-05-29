@@ -22,18 +22,15 @@ struct ContentView: View {
         let images = cifar10Data.images
         let labels = cifar10Data.labels
         let net = Network(input_size: 3072, hidden_size: 50, output_size: 10)
-        let learning_rate: Float = 0.1
-        let grad = net.gradient(x: images.first!, t: labels.first!)
-//        print("grad: \(grad["w1"]![1000])")
-        for g in grad["w1"]! {
-            print("grad: \(g)")
-        }
-//        net.params["w1"] -= learning_rate * grad["w1"]
-//        net.params["w2"] -= learning_rate * grad["w2"]
         
-//        for key in ("w1", "w2"):
-//            net.params[key] -= learning_rate * grad[key]
-//
+//        let grad = net.gradient(x: images.first!, t: labels.first!)
+        for i in 0..<images.count {
+            let grad = net.gradient(x: images[i], t: labels[i])
+            net.update(grad: grad)
+        }
+
+        
+        
 //        print(labels.first!)
 //        print(images.first!)
         
