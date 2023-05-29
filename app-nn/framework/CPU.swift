@@ -43,6 +43,10 @@ func matrixMultiplication(_ a: [[Float]], _ b: [[Float]]) -> [[Float]]? {
     return result
 }
 
+func generateZeroArray(size: Int) -> [Float] {
+    [Float](repeating: 0, count: size)
+}
+
 func generate2DGaussianArray(numRows: Int, numCols: Int, stdRow: Float, stdCol: Float) -> [[Float]] {
     let meanRow = Array(repeating: Float(numRows/2), count: numRows)
     let meanCol = Array(repeating: Float(numCols/2), count: numCols)

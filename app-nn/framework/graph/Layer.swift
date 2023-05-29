@@ -12,4 +12,5 @@ protocol Layer {
     func backward(dout: [Float]) -> [Float]
     
     func weight() -> [[Float]]?
+    func bais() -> Float?
 }

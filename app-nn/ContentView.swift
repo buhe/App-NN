@@ -26,7 +26,10 @@ struct ContentView: View {
 //        let grad = net.gradient(x: images.first!, t: labels.first!)
         for i in 0..<images.count {
             let grad = net.gradient(x: images[i], t: labels[i])
-            net.update(grad: grad)
+            net.updateW(key: "w1", grad: grad.0)
+            net.updateW(key: "w2", grad: grad.0)
+            net.updateB(key: "b1", grad: grad.1)
+            net.updateB(key: "b2", grad: grad.1)
         }
 
         

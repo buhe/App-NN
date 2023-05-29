@@ -7,6 +7,10 @@
 
 import Foundation
 class Relu: Layer {
+    func bais() -> Float? {
+        nil
+    }
+    
     func weight() -> [[Float]]? {
         nil
     }
