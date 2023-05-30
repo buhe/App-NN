@@ -17,19 +17,28 @@ class Relu: Layer {
     
     var mask: [Int] = []
     func forward(x: [Float]) -> [Float] {
+//        print("x \(x)")
         x.enumerated().map { (index, value) in
             if value < 0 {
                 mask.append(index)
             }
         }
 
-        return x.map { relu($0) }
+        let r = x.map { relu($0) }
+//        print("relu \(r)")
+        return r
     }
     
     func backward(dout: [Float]) -> [Float] {
-        return dout.enumerated().map { (index, value) in
+        let masked = dout.enumerated().map { (index, value) in
             return mask.contains(index) ? 0 : value
         }
+        
+//        print("mask \(mask)")
+//        print("before \(dout)")
+//        print("after \(masked)")
+        mask = []
+        return masked
     }
     
     func relu(_ x: Float) -> Float {

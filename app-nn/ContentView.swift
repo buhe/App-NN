@@ -22,7 +22,7 @@ struct ContentView: View {
         let images = cifar10Data.images
         let labels = cifar10Data.labels
         let net = Network(input_size: 3072, hidden_size: 50, output_size: 10)
-        
+
 //        let grad = net.gradient(x: images.first!, t: labels.first!)
         for i in 0..<images.count {
             let grad = net.gradient(x: images[i], t: labels[i])
@@ -31,8 +31,9 @@ struct ContentView: View {
             net.updateB(key: "b1", grad: grad.1)
             net.updateB(key: "b2", grad: grad.1)
         }
-
-        
+//
+//        let nb = createNormalDistributedArray(rows: 2, columns: 3, mu: 0, sigma: 1.0)
+//        print("nb \(nb)")
         
 //        print(labels.first!)
 //        print(images.first!)

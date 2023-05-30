@@ -24,6 +24,9 @@ class SoftmaxWithLoss {
             let diff = value - self.t[index]
             result.append(diff)
         }
+//        print("t: \(t)")
+//        print("y: \(y)")
+//        print("dloss: \(result)")
         return result
 
     }

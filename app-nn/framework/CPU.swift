@@ -67,6 +67,30 @@ func generate2DGaussianArray(numRows: Int, numCols: Int, stdRow: Float, stdCol: 
     return array2D
 }
 
+func normalDistribution(mu: Float, sigma: Float) -> Float {
+    let u1 = Float(arc4random()) / Float(UInt32.max)
+    let u2 = Float(arc4random()) / Float(UInt32.max)
+    let z0 = sqrt(-2.0 * logf(u1)) * cosf(2.0 * .pi * u2)
+    let z1 = sqrt(-2.0 * logf(u1)) * sinf(2.0 * .pi * u2)
+    let x = mu + sigma * z0
+    return x
+}
+
+func createNormalDistributedArray(rows: Int, columns: Int, mu: Float, sigma: Float) -> [[Float]] {
+    var array: [[Float]] = Array(repeating: Array(repeating: 0.0, count: columns), count: rows)
+    
+    for i in 0..<rows {
+        for j in 0..<columns {
+            let value = normalDistribution(mu: mu, sigma: sigma)
+            array[i][j] = value * 0.01
+        }
+    }
+    
+    return array
+}
+
+let normalArray = createNormalDistributedArray(rows: 3, columns: 3, mu: 0, sigma: 1.0)
+
 
 
 

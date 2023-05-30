@@ -29,18 +29,20 @@ class Affine: Layer {
     }
     func forward(x: [Float]) -> [Float]{
         self.x = [x]
-        var mul = matrixMultiplication(self.x, net.params[w]!)!.first!
+        var mul = matrixMultiplication(self.x, net.params[w]!)!.first! // 1 2 . 2 3 = 1 3
+//        print("x: \(x)")
 //        print("w: \(net.params[w]!)")
-        print("b: \(net.paramsB[b]!)")
+//        print("b: \(net.paramsB[b]!)")
         for i in 0..<mul.count {
             mul[i] = mul[i] + net.paramsB[b]![i]
         }
+//        print("affine \(w) \(mul)")
         return mul
     }
     
     func backward(dout: [Float]) -> [Float]{
-        self.dw = matrixMultiplication(transpose(self.x), [dout])! // 3 2 2 2
+        self.dw = matrixMultiplication(transpose(self.x), [dout])! // 2 1 . 1 3
         self.db = dout.reduce(0) { $0 + $1 }
-        return matrixMultiplication([dout], transpose(net.params[w]!))!.first! //   2 3
+        return matrixMultiplication([dout], transpose(net.params[w]!))!.first! //   1 3 . 3 2 = 1 2
     }
 }

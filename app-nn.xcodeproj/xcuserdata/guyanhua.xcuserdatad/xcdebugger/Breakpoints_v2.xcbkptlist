@@ -14,8 +14,8 @@
             filePath = "app-nn/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "app-nn/Network.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "gradient(x:t:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "app-nn/framework/graph/Affine.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "backward(dout:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "app-nn/Network.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "init(input_size:hidden_size:output_size:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,58 +94,10 @@
             filePath = "app-nn/Network.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "init(input_size:hidden_size:output_size:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "50F3D21C-6ABC-4C88-AC8F-B202935FBDFF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "app-nn/framework/CPU.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "generate2DGaussianArray(numRows:numCols:stdRow:stdCol:)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E3C9F6D8-5D5A-4765-BBD0-A7920F474B5D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "app-nn/framework/CPU.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "generate2DGaussianArray(numRows:numCols:stdRow:stdCol:)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "43F7F612-28E8-40CC-9E89-2F9FF6BC8860"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "app-nn/framework/CPU.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "generate2DGaussianArray(numRows:numCols:stdRow:stdCol:)"
-            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -158,8 +110,8 @@
             filePath = "app-nn/Network.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "updateB(key:grad:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -208,6 +160,277 @@
                   startingLineNumber = "32"
                   endingLineNumber = "32"
                   offsetFromSymbolStart = "276">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DBEFA399-C9F8-4221-AB92-EE6FEA239AE4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "app-nn/Network.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "gradient(x:t:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A727EA7B-32CF-40C1-8720-BCE46C19D87C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "app-nn/Network.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "updateW(key:grad:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A727EA7B-32CF-40C1-8720-BCE46C19D87C - c27b0b3d9632a6de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app_nn.Network.updateW(key: Swift.String, grad: Swift.Dictionary&lt;Swift.String, Swift.Array&lt;Swift.Array&lt;Swift.Float&gt;&gt;&gt;) -&gt; ()"
+                  moduleName = "app-nn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guyanhua/code/github/app-nn/app-nn/Network.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "2228">
+               </Location>
+               <Location
+                  uuid = "A727EA7B-32CF-40C1-8720-BCE46C19D87C - c27b0b3d9632a6de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app_nn.Network.updateW(key: Swift.String, grad: Swift.Dictionary&lt;Swift.String, Swift.Array&lt;Swift.Array&lt;Swift.Float&gt;&gt;&gt;) -&gt; ()"
+                  moduleName = "app-nn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guyanhua/code/github/app-nn/app-nn/Network.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "1852">
+               </Location>
+               <Location
+                  uuid = "A727EA7B-32CF-40C1-8720-BCE46C19D87C - c27b0b3d9632a75a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app_nn.Network.updateW(key: Swift.String, grad: Swift.Dictionary&lt;Swift.String, Swift.Array&lt;Swift.Array&lt;Swift.Float&gt;&gt;&gt;) -&gt; ()"
+                  moduleName = "app-nn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guyanhua/code/github/app-nn/app-nn/Network.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "1720">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9FE2656F-B813-44F5-85D6-6CC27F51981F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "app-nn/Network.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "gradient(x:t:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9FE2656F-B813-44F5-85D6-6CC27F51981F - dce909e0ffaf33ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app_nn.Network.gradient(x: Swift.Array&lt;Swift.Float&gt;, t: Swift.Array&lt;Swift.Float&gt;) -&gt; (Swift.Dictionary&lt;Swift.String, Swift.Array&lt;Swift.Array&lt;Swift.Float&gt;&gt;&gt;, Swift.Dictionary&lt;Swift.String, Swift.Float&gt;)"
+                  moduleName = "app-nn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guyanhua/code/github/app-nn/app-nn/Network.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "748">
+               </Location>
+               <Location
+                  uuid = "9FE2656F-B813-44F5-85D6-6CC27F51981F - dce909e0ffaf33ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app_nn.Network.gradient(x: Swift.Array&lt;Swift.Float&gt;, t: Swift.Array&lt;Swift.Float&gt;) -&gt; (Swift.Dictionary&lt;Swift.String, Swift.Array&lt;Swift.Array&lt;Swift.Float&gt;&gt;&gt;, Swift.Dictionary&lt;Swift.String, Swift.Float&gt;)"
+                  moduleName = "app-nn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guyanhua/code/github/app-nn/app-nn/Network.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "348">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D642F2D0-E87A-400F-95C0-C2EE8D73194B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "app-nn/framework/graph/SoftmaxWithLoss.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "backward()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5B84656-91F0-4075-BB30-9B36A362F0BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "app-nn/framework/graph/SoftmaxWithLoss.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "backward()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FBE3761B-DBFE-4FE7-B722-A10CAE309C97"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "app-nn/framework/graph/SoftmaxWithLoss.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "forward(x:t:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A4C5957-D19F-4D03-858C-B39449AE2FC5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "app-nn/framework/CPU.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "softmax(x:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "1A4C5957-D19F-4D03-858C-B39449AE2FC5 - 5182f5578981e866"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app_nn.softmax(x: Swift.Array&lt;Swift.Float&gt;) -&gt; Swift.Array&lt;Swift.Float&gt;"
+                  moduleName = "app-nn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guyanhua/code/github/app-nn/app-nn/framework/CPU.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "1A4C5957-D19F-4D03-858C-B39449AE2FC5 - 7bcc904cc8854c52"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Float) -&gt; Swift.Float in app_nn.softmax(x: Swift.Array&lt;Swift.Float&gt;) -&gt; Swift.Array&lt;Swift.Float&gt;"
+                  moduleName = "app-nn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guyanhua/code/github/app-nn/app-nn/framework/CPU.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC754623-92B1-43F2-808E-8E5E49F274FD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "app-nn/framework/CPU.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "softmax(x:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "DC754623-92B1-43F2-808E-8E5E49F274FD - 5182f5578981e805"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "app_nn.softmax(x: Swift.Array&lt;Swift.Float&gt;) -&gt; Swift.Array&lt;Swift.Float&gt;"
+                  moduleName = "app-nn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guyanhua/code/github/app-nn/app-nn/framework/CPU.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "DC754623-92B1-43F2-808E-8E5E49F274FD - 29d36dc0c7517d3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 (Swift.Float, Swift.Float) -&gt; Swift.Float in app_nn.softmax(x: Swift.Array&lt;Swift.Float&gt;) -&gt; Swift.Array&lt;Swift.Float&gt;"
+                  moduleName = "app-nn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guyanhua/code/github/app-nn/app-nn/framework/CPU.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>
